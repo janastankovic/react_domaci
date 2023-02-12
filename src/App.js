@@ -7,6 +7,7 @@ import {Cart} from './pages/cart/cart';
 import { ShopContextProvider } from './context/shop-context';
 import ONama from './pages/about/about';
 import Kontakt from './pages/contact/contact';
+import Footer from './components/footer/footer';
 
 function App() {
   return <div className = "App">
@@ -19,6 +20,7 @@ function App() {
           <Route path="cart" element={<Cart/>}/>
           <Route path="contact" element={<Kontakt/>}/>
         </Routes>
+        <Footer/>
     </Router>
     </ShopContextProvider>
   </div>;

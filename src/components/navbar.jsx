@@ -2,9 +2,16 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {ShoppingCart} from "phosphor-react";
 import "./navbar.css";
+import logo from "../assets/logo.png";
 
 export const Navbar = () => {
+
+   
     return (<div className="navbar">
+
+        <div className='left-column' >
+        <img src={logo} alt='logo'  />
+        </div>
 
         <div className = "links">
             <Link to ="/"> Shop</Link>
